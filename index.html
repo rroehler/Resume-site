@@ -1,1 +1,63 @@
-<h1>test</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <p>Your next great hire is one click away.</p>
+  </header>
+
+  <nav>
+    <a href="resume.html">Resume</a> |
+    <a href="cover.html">Cover Letter</a> |
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>I’m a driven professional with a passion for [industry/skills]. Feel free to explore my resume and cover letter to learn more about my experience and accomplishments.</p>
+    </section>
+
+    <section>
+      <h2>Featured Documents</h2>
+      <ul>
+        <li><a href="resume.html">View My Resume</a></li>
+        <li><a href="cover.html">Read My Cover Letter</a></li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form class="contact-form" action="mailto:your-email@example.com" method="post" enctype="text/plain">
+        <fieldset>
+          <legend>Send a Message</legend>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <input type="submit" value="Send Message" />
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Your Name. All rights reserved.</p>
+    <p id="currentDate">Today's date: <script>document.getElementById('currentDate').innerText += new Date().toLocaleDateString();</script></p>
+  </footer>
+
+</body>
+</html>
