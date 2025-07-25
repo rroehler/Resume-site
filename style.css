@@ -9,16 +9,16 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background-color: #f4f7f6;
-    color: #333;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
 }
 
 header {
-    background-color: #2c3e50;
-    color: #ecf0f1;
+    background-color: #111820;
+    color: #ffffff;
     padding: 2.5rem 1rem;
     text-align: center;
-    border-bottom: 5px solid #1abc9c;
+    border-bottom: 4px solid #00b894;
 }
 
 header h1 {
@@ -27,7 +27,7 @@ header h1 {
 }
 
 nav {
-    background-color: #a0adaa;
+    background-color: #2c2c2c;
     padding: 0.5rem;
     text-align: center;
     position: sticky;
@@ -39,15 +39,15 @@ main {
     max-width: 900px;
     margin: 2rem auto;
     padding: 2rem;
-    background: #ffffff;
+    background: #2b2b2b;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
 }
 
 section {
     margin-bottom: 2.5rem;
     padding-bottom: 1.5rem;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #444;
 }
 
 section:last-of-type {
@@ -56,15 +56,15 @@ section:last-of-type {
 
 h2 {
     font-size: 1.8rem;
-    color: #1abc9c;
-    border-bottom: 2px solid #2c3e50;
+    color: #00b894;
+    border-bottom: 2px solid #ffffff22;
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
 }
 
 h3 {
     font-size: 1.4rem;
-    color: #34495e;
+    color: #81ecec;
     margin-bottom: 0rem;
 }
 
@@ -74,7 +74,6 @@ table {
     margin-top: 1rem;
 }
 
-/*Certifications*/
 .certifications-flex {
     display: flex;
     align-items: flex-start;
@@ -83,16 +82,20 @@ table {
     gap: 2rem;
 }
 
-/* Descendant Selector */
 table th, table td {
-    border: 1px solid #ddd;
+    border: 1px solid #444;
     padding: 12px;
     text-align: left;
 }
 
 table th {
-    background-color: #f2f2f2;
+    background-color: #333;
     font-weight: 600;
+    color: #eee;
+}
+
+table td {
+    background-color: #222;
 }
 
 ul {
@@ -108,27 +111,27 @@ footer {
     text-align: center;
     padding: 2rem;
     margin-top: 2rem;
-    background: #2c3e50;
-    color: #ecf0f1;
+    background: #111820;
+    color: #ccc;
 }
 
-/* Pseudo-class selector */
 nav a:hover {
-    background-color: #1abc9c;
+    background-color: #00b894;
     border-radius: 5px;
 }
 
 footer a:hover {
     text-decoration: underline;
+    color: #00b894;
 }
 
-/* Class Selector */
 .media-item {
     display: block;
     max-width: 100%;
     margin-top: 1rem;
     margin-bottom: 2rem;
     border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
 
 .contact-form label {
@@ -146,7 +149,9 @@ footer a:hover {
     padding: 0.8rem;
     margin-bottom: 1rem;
     border-radius: 4px;
-    border: 1px solid #ccc;
+    border: 1px solid #555;
+    background-color: #1a1a1a;
+    color: #eee;
 }
 
 .contact-form input[type="submit"] {
@@ -154,7 +159,7 @@ footer a:hover {
     width: 100%;
     padding: 1rem;
     border: none;
-    background-color: #1abc9c;
+    background-color: #00b894;
     color: white;
     font-size: 1.1rem;
     border-radius: 4px;
@@ -163,11 +168,11 @@ footer a:hover {
 }
 
 .contact-form input[type="submit"]:hover {
-    background-color: #16a085;
+    background-color: #019875;
 }
 
 .contact-form fieldset {
-    border: 1px solid #ccc;
+    border: 1px solid #555;
     padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 4px;
@@ -176,6 +181,7 @@ footer a:hover {
 .contact-form legend {
     padding: 0 0.5rem;
     font-weight: 600;
+    color: #00cec9;
 }
 
 .contact-form input[type="radio"] {
@@ -188,18 +194,16 @@ footer a:hover {
     font-weight: normal;
 }
 
-/* ID Selector */
 #currentDate {
     font-style: italic;
     font-size: 0.9rem;
     text-align: right;
-    color: #777;
+    color: #999;
     margin-top: 2rem;
 }
 
-/* Attribute Selector */
 a[href*="mailto"] {
-    color: #1abc9c;
+    color: #00cec9;
     font-weight: 600;
     text-decoration: none;
 }

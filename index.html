@@ -3,65 +3,155 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ryan Roehler</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Ryan Roehler | Skilled IT Professional</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #1c1c1c;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      text-align: center;
+      padding: 1rem;
+      background-color: #2e2e2e;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      height: 100%;
+    }
+
+    .left, .center, .right {
+      flex: 1;
+      padding: 1.5rem;
+      box-sizing: border-box;
+    }
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #2a2a2a;
+    }
+
+    .left a {
+      background-color: #444;
+      color: #fff;
+      padding: 1rem 2rem;
+      margin: 0.5rem;
+      border-radius: 15px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: background-color 0.3s;
+    }
+
+    .left a:hover {
+      background-color: #666;
+    }
+
+    .center {
+      background-color: #1c1c1c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .center p {
+      max-width: 400px;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .right {
+      background-color: #2a2a2a;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label, input, textarea {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.5rem;
+      border: none;
+      border-radius: 8px;
+    }
+
+    button {
+      margin-top: 1rem;
+      padding: 0.7rem;
+      border: none;
+      border-radius: 10px;
+      background-color: #444;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #666;
+    }
+  </style>
 </head>
 <body>
-
   <header>
     <h1>Ryan Roehler</h1>
     <p>Skilled IT Professional</p>
   </header>
-
-  <nav>
-    <a href="resume.html">Resume</a> |
-    <a href="cover-letter.html">Cover Letter</a>
-    <!--a href="#contact">Contact</a-->
-  </nav>
-
-<!--section>
-  <h2>Documents</h2>
-  <div class="button-group">
-    <a href="resume.html" class="doc-button">Resume</a>
-    <a href="cover-letter.html" class="doc-button">Cover Letter</a>
-  </div>
-</section-->
-  
   <main>
-    <section>
-      <h2>About Me</h2>
-      <p>Hello! I'm an enthusiastic professional with strong experience in IT, management, and training. 
-        I worked as professional in the military intelligence field for 8 years before transitioning to pursue a career in IT in 2023. My experience in intelligence
-        has allowed me to become highly detail oriented, forward thinking, and gave me the ability to think outside of the box to find answers.
-        I would be honored for you to take a look at my professional background and consider having a conversation on how I may fit within your company. 
-      You can use the contact form at the bottom of the page to contact me.</p>
-    </section>
+    <div class="left">
+      <a href="resume.html" target="_blank">Resume</a>
+      <a href="cover-letter.html" target="_blank">Cover Letter</a>
+    </div>
+    <div class="center">
+      <div style="width:100%;">
+        <img src="/media/Headshot.png" alt="Headshot of Ryan Roehler" style="width: 250px; border-radius: 175px; margin: 0 auto 1rem auto; display: block;">
+        <p>
+          Hello! I'm an enthusiastic professional with strong experience in IT, management, and training. I worked as a contract professional in the military intelligence field for 8 years before transitioning to pursue a career in IT in 2023. My experience in intelligence has allowed me to become highly detail oriented, forward thinking, and gave me the ability to think outside of the box to find answers. I would be honored for you to take a look at my professional background and consider having a conversation on how I may fit within your company.
+        </p>
+      </div>
+    </div>
+    <div class="right">
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form class="contact-form" action="mailto:ryan.roehler@gmail.com" method="post" enctype="text/plain">
-        <fieldset>
-          <legend>Send a Message</legend>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
 
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-
-          <input type="submit" value="Send Message" />
-        </fieldset>
+        <button type="submit">Send</button>
       </form>
-    </section>
+    </div>
   </main>
-
-  <footer>
-    <p>© 2025 Your Name. All rights reserved.</p>
-    <p id="currentDate">Today's date: <script>document.getElementById('currentDate').innerText += new Date().toLocaleDateString();</script></p>
-  </footer>
-
 </body>
 </html>
