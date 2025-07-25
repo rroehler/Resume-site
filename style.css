@@ -9,12 +9,24 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background-color: #1e1e1e;
+    background: linear-gradient(
+        90deg,
+        #233a6a 0%,
+        #23272f 20%,
+        #23272f 80%,
+        #233a6a 100%
+    );
     color: #e0e0e0;
 }
 
 header {
-    background-color: #111820;
+    background: linear-gradient(
+        90deg,
+        #233a6a 0%,
+        #23272f 20%,
+        #23272f 80%,
+        #233a6a 100%
+    );
     color: #ffffff;
     padding: 2.5rem 1rem;
     text-align: center;
@@ -33,6 +45,24 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+
+nav a {
+    color: #eee;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav a:visited {
+    color: #fffbe6; /* Light yellow for visited links */
+}
+
+nav a:hover {
+    background-color: #00b894;
+    border-radius: 5px;
+    color: #23272f;
 }
 
 main {
@@ -113,11 +143,6 @@ footer {
     margin-top: 2rem;
     background: #111820;
     color: #ccc;
-}
-
-nav a:hover {
-    background-color: #00b894;
-    border-radius: 5px;
 }
 
 footer a:hover {
