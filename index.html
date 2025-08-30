@@ -64,7 +64,9 @@
     }
 
     .left, .center, .right {
-      flex: 1;
+      flex: 1 1 0;
+      min-width: 0;
+      max-width: 33.33%;
       padding: 1.5rem;
       box-sizing: border-box;
       /* Remove individual background colors for seamless gradient */
@@ -95,6 +97,7 @@
 
     .center {
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
@@ -155,14 +158,18 @@
       <a href="resume.html">Resume</a>
     </div>
     <div class="center">
-      <div style="width:100%;">
-        <img src="/media/Headshot.png" alt="Headshot of Ryan Roehler" style="width: 250px; border-radius: 175px; margin: 0 auto 1rem auto; display: block;">
-        <p>
+      <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+        <img src="/media/Headshot.jpg" alt="Headshot of Ryan Roehler" style="width: 250px; border-radius: 175px; margin-bottom: 1rem; display: block;">
+        <p style="text-align: center; max-width: 400px;">
           Hello! I'm an enthusiastic professional with strong experience in IT, management, and training. I worked as a contract professional in the military intelligence field for 8 years before transitioning to pursue a career in IT in 2023. My experience in intelligence has allowed me to become highly detail oriented, forward thinking, and gave me the ability to think outside of the box to find answers. I would be honored for you to take a look at my professional background and consider having a conversation on how I may fit within your company.
         </p>
       </div>
     </div>
     <div class="right">
+      <h2 style="text-align: center; font-size: 3em; margin-bottom: 0.3em; color: #e0e0e0;">Contact Me</h2>
+      <div style="text-align: center; margin-bottom: 2em; color: #e0e0e0; font-size: 1.1em;">
+        If you think I would be a solid fit for your team, contact me via email using the form below.
+      </div>
       <form action="https://formspree.io/f/xblkoknn" method="POST">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required />
