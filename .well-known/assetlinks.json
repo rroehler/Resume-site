@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.ryanroehler.financialfriday",
+        "sha256_cert_fingerprints": ["12:72:49:1D:32:04:31:EA:97:9A:68:E1:DE:95:36:CB:EF:FD:63:2E:C4:03:AD:EF:D1:9D:09:4D:A6:C6:17:56"]
+      }
+    }]
